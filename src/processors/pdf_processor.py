@@ -62,7 +62,8 @@ class PDFProcessor:
                                 'file_type': 'pdf',
                                 'page': page_num + 1,
                                 'content_type': 'text',
-                                'total_pages': len(pdf.pages)
+                                'total_pages': len(pdf.pages),
+                                'extraction_method': 'pdfplumber'
                             }
                         })
 
@@ -79,16 +80,11 @@ class PDFProcessor:
                                         'content_type': 'table',
                                         'table_number': i + 1,
                                         'total_pages': len(pdf.pages),
-                                        'table_metadata': {
-                                            'num_rows': len(table),
-                                            'num_columns': len(table[0]) if table else 0,
-                                            'headers': table[0] if table else [],
-                                            'extraction_method': 'pdfplumber'
-                                        },
-                                        'structured_data': {
-                                            'format': 'json',
-                                            'data': self._table_to_dict(table)
-                                        }
+                                        # Flatten table metadata to avoid ChromaDB nested object issues
+                                        'num_rows': len(table),
+                                        'num_columns': len(table[0]) if table else 0,
+                                        'headers': '|'.join(table[0]) if table else '',  # Convert list to string
+                                        'extraction_method': 'pdfplumber'
                                     }
                                 })
 
@@ -117,7 +113,8 @@ class PDFProcessor:
                             'file_type': 'pdf',
                             'page': page_num + 1,
                             'content_type': 'text',
-                            'total_pages': total_pages
+                            'total_pages': total_pages,
+                            'extraction_method': 'pymupdf'
                         }
                     })
 

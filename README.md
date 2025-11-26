@@ -241,7 +241,7 @@ llm:
 ## 📁 Project Structure
 
 ```
-rainmarket-chatbot/
+kg-rag-kb/
 ├── src/
 │   ├── processors/          # Document processors
 │   │   ├── pdf_processor.py

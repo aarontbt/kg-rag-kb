@@ -1,0 +1,20 @@
+This is a sample document for testing the RAG system.
+
+Artificial Intelligence (AI) is a branch of computer science that aims to create intelligent machines capable of performing tasks that typically require human intelligence. These tasks include learning, reasoning, problem-solving, perception, and language understanding.
+
+Machine Learning is a subset of AI that focuses on the development of algorithms and statistical models that enable computers to improve their performance on a specific task through experience, without being explicitly programmed. It involves training models on large datasets to recognize patterns and make predictions or decisions.
+
+Deep Learning is a subfield of machine learning that uses neural networks with multiple layers (deep neural networks) to progressively extract higher-level features from raw input. For example, in image processing, lower layers may identify edges, while higher layers may identify concepts relevant to a human such as digits, letters, or faces.
+
+Natural Language Processing (NLP) is a branch of AI that helps computers understand, interpret and manipulate human language. NLP draws from many disciplines, including computer science and computational linguistics, in its pursuit to fill the gap between human communication and computer understanding.
+
+Computer Vision is an AI field that trains computers to interpret and understand the visual world. Using digital images from cameras and videos and deep learning models, machines can accurately identify and classify objects — and then react to what they "see."
+
+Applications of AI include:
+1. Healthcare: Medical diagnosis, drug discovery, personalized treatment
+2. Finance: Fraud detection, algorithmic trading, risk assessment
+3. Transportation: Self-driving cars, traffic optimization
+4. Retail: Recommendation systems, inventory management
+5. Manufacturing: Quality control, predictive maintenance
+
+The future of AI promises more advanced applications, improved efficiency, and new capabilities that could transform how we live and work. However, it also raises important ethical considerations around privacy, bias, and the impact on employment.

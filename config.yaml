@@ -1,0 +1,35 @@
+# RAG System Configuration
+
+# Database settings
+database:
+  path: "./vector_db"
+  collection_name: "documents"
+  embedding_model: "all-MiniLM-L6-v2"
+
+# Document processing
+documents:
+  data_path: "./data"
+  supported_formats: ["pdf", "png", "jpg", "jpeg", "pptx", "docx", "txt"]
+  chunk_size: 1000
+  chunk_overlap: 200
+
+# OCR settings
+ocr:
+  language: "eng"
+  config: "--psm 6"
+
+# Retrieval settings
+retrieval:
+  top_k: 5
+  similarity_threshold: 0.1
+
+# LLM settings (for Ollama)
+llm:
+  model: "llama2"
+  temperature: 0.7
+  max_tokens: 1000
+
+# CLI settings
+cli:
+  max_results_display: 10
+  show_metadata: true

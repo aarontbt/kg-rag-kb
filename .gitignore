@@ -194,3 +194,6 @@ data/cache/
 
 # Local droid data
 .factory/
+
+# Backup files
+*.backup

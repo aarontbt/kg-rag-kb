@@ -4,7 +4,7 @@
 database:
   path: "./vector_db"
   collection_name: "documents"
-  embedding_model: "all-MiniLM-L6-v2"
+  embedding_model: "nomic-ai/nomic-embed-text-v1.5"  # Better accuracy (+6%) than all-MiniLM-L6-v2
 
 # Document processing
 documents:

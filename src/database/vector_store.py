@@ -13,7 +13,7 @@ class VectorStore:
     def __init__(self, 
                  db_path: str = "./vector_db",
                  collection_name: str = "documents",
-                 embedding_model: str = "all-MiniLM-L6-v2"):
+                 embedding_model: str = "nomic-ai/nomic-embed-text-v1.5"):
         """
         Initialize vector store
         

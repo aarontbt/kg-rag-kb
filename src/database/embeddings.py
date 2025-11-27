@@ -8,8 +8,7 @@ logger = logging.getLogger(__name__)
 class EmbeddingsManager:
     """Manage text embeddings using Sentence Transformers"""
     
-    def __init__(self, model_name: str = "all-MiniLM-L6-v2"):
-        # Recommended: Use "nomic-ai/nomic-embed-text-v1.5" for +6% better accuracy
+    def __init__(self, model_name: str = "nomic-ai/nomic-embed-text-v1.5"):
         """
         Initialize embeddings manager
         
@@ -89,7 +88,7 @@ class EmbeddingsManager:
         if self.model:
             return self.model.get_sentence_embedding_dimension()
         else:
-            return 384  # Default for all-MiniLM-L6-v2 (768 for nomic-embed-text-v1.5)
+            return 768  # Default for nomic-embed-text-v1.5
     
     def compute_similarity(self, embedding1: List[float], embedding2: List[float]) -> float:
         """
